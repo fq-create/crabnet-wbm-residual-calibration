@@ -1,0 +1,7 @@
+Wrote 256963 rows to outputs/orb-v3/eform/orb-v3_wbm_computed_full.csv
+baseline_model material_id     formula  n_atoms  energy_total  energy_per_atom  e_correction_per_atom_mp2020  energy_total_for_eform  e_form_per_atom
+        orb-v3     wbm-1-1      Ac6 U2        8    -42.878307        -5.359788                           0.0              -42.878307         0.553962
+        orb-v3     wbm-1-2     Ac1 Th3        4    -25.824511        -6.456128                           0.0              -25.824511         0.134597
+        orb-v3     wbm-1-3      Ac1 U3        4    -34.911266        -8.727817                           0.0              -34.911266         0.771033
+        orb-v3     wbm-1-4 Ag2 Au1 Hg1        4     -9.125749        -2.281437                           0.0               -9.125749         0.029263
+        orb-v3     wbm-1-5 Ag2 Ba1 La1        4    -13.219178        -3.304795                           0.0              -13.219178        -0.174745

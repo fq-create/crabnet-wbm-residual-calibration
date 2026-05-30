@@ -1,0 +1,21 @@
+{
+  "baseline_model": "chgnet",
+  "summary": "/home/ubuntu/fq/Latent-space-fusion-and-distillation/residual model/data/wbm_summary.csv.gz",
+  "structures": "/home/ubuntu/fq/Latent-space-fusion-and-distillation/residual model/data/2022-10-19-wbm-computed-structure-entries.json",
+  "structure_source": "computed_structure_entry.structure",
+  "structure_tag": "computed",
+  "output_root": "/home/ubuntu/fq/Latent-space-fusion-and-distillation/residual model/frozen baseline/outputs",
+  "output": "/home/ubuntu/fq/Latent-space-fusion-and-distillation/residual model/frozen baseline/outputs/chgnet/raw_predictions/chgnet_wbm_computed_full_raw.csv",
+  "chunk_dir": "/home/ubuntu/fq/Latent-space-fusion-and-distillation/residual model/frozen baseline/outputs/chgnet/chunks/raw_predictions",
+  "model_name": "0.3.0",
+  "device": "cuda",
+  "chunk_size": 2000,
+  "chunk_offset": 0,
+  "chunk_stride": 1,
+  "skip_assemble": false,
+  "requested_rows": 256963,
+  "assigned_rows": 256963,
+  "predicted_rows_this_run": 256963,
+  "skipped_chunks": 0,
+  "n_chunks": 129
+}

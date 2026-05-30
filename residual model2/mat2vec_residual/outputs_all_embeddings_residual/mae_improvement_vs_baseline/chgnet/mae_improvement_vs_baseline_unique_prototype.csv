@@ -1,0 +1,15 @@
+baseline_model,representation,subset,MAE_mean,baseline_representation,baseline_MAE_mean,relative_improvement_vs_baseline_%
+chgnet,mat2vec+S64,unique_prototype,0.0492198433497458,chgnet-baseline,0.0562464411913361,12.492519869279551
+chgnet,mat2vec+H64,unique_prototype,0.0492376879634904,chgnet-baseline,0.0562464411913361,12.460794104294887
+chgnet,mat2vec+S32,unique_prototype,0.0492942663675768,chgnet-baseline,0.0562464411913361,12.360203910696804
+chgnet,mat2vec+L32,unique_prototype,0.0493353102449121,chgnet-baseline,0.0562464411913361,12.287232400915983
+chgnet,mat2vec,unique_prototype,0.0493562189190951,chgnet-baseline,0.0562464411913361,12.250059072719315
+chgnet,mat2vec+L64,unique_prototype,0.0493878542297416,chgnet-baseline,0.0562464411913361,12.193814962022802
+chgnet,mat2vec+H32,unique_prototype,0.0493920606170117,chgnet-baseline,0.0562464411913361,12.186336467062048
+chgnet,MDS_E_64_cos_zscore,unique_prototype,0.0507668132750335,chgnet-baseline,0.0562464411913361,9.742177105325299
+chgnet,MDS_64_cos_zscore,unique_prototype,0.0508126492560515,chgnet-baseline,0.0562464411913361,9.660685761078147
+chgnet,MDS_F_64_cos_zscore,unique_prototype,0.0510467290151725,chgnet-baseline,0.0562464411913361,9.244517637081252
+chgnet,MDS_F_32_cos_zscore,unique_prototype,0.0515076083735567,chgnet-baseline,0.0562464411913361,8.425124714395873
+chgnet,MDS_32_cos_zscore,unique_prototype,0.0515888260340549,chgnet-baseline,0.0562464411913361,8.280728626789339
+chgnet,MDS_E_32_cos_zscore,unique_prototype,0.0517609347457729,chgnet-baseline,0.0562464411913361,7.974738224423203
+chgnet,chgnet-baseline,unique_prototype,0.0562464411913361,chgnet-baseline,0.0562464411913361,0.0

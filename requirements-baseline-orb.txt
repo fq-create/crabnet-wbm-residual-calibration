@@ -1,0 +1,10 @@
+# ORB frozen-baseline prediction environment
+# Tested with Python 3.11.
+orb-models==0.5.2
+torch==2.6.0
+numpy==2.2.4
+pandas==2.2.3
+pymatgen==2025.10.7
+ase==3.25.0
+monty==2025.3.3
+tqdm==4.67.1

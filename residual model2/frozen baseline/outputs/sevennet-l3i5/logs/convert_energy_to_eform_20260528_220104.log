@@ -1,0 +1,7 @@
+Wrote 256963 rows to outputs/sevennet-l3i5/eform/sevennet-l3i5_wbm_computed_full.csv
+baseline_model material_id     formula  n_atoms  energy_total  energy_per_atom  e_correction_per_atom_mp2020  energy_total_for_eform  e_form_per_atom
+ sevennet-l3i5     wbm-1-1      Ac6 U2        8    -43.106659        -5.388332                           0.0              -43.106659         0.525418
+ sevennet-l3i5     wbm-1-2     Ac1 Th3        4    -25.783108        -6.445777                           0.0              -25.783108         0.144948
+ sevennet-l3i5     wbm-1-3      Ac1 U3        4    -34.853310        -8.713327                           0.0              -34.853310         0.785523
+ sevennet-l3i5     wbm-1-4 Ag2 Au1 Hg1        4     -9.120270        -2.280067                           0.0               -9.120270         0.030633
+ sevennet-l3i5     wbm-1-5 Ag2 Ba1 La1        4    -13.258285        -3.314571                           0.0              -13.258285        -0.184521

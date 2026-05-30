@@ -1,0 +1,13 @@
+# SevenNet frozen-baseline prediction environment
+# Tested with Python 3.11.
+# The local working environment used sevenn==0.11.1.dev1. If this dev
+# version is unavailable from pip, install SevenNet from its official source
+# and then install the remaining packages below.
+sevenn
+torch==2.2.2
+numpy==1.26.4
+pandas==2.2.3
+pymatgen==2025.10.7
+ase==3.25.0
+monty==2025.3.3
+tqdm==4.67.1

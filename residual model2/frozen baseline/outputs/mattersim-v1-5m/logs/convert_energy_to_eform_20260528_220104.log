@@ -1,0 +1,7 @@
+Wrote 256963 rows to outputs/mattersim-v1-5m/eform/mattersim-v1-5m_wbm_computed_full.csv
+ baseline_model material_id     formula  n_atoms  energy_total  energy_per_atom  e_correction_per_atom_mp2020  energy_total_for_eform  e_form_per_atom
+mattersim-v1-5m     wbm-1-1      Ac6 U2        8    -42.989025        -5.373628                           0.0              -42.989025         0.540122
+mattersim-v1-5m     wbm-1-2     Ac1 Th3        4    -25.792418        -6.448104                           0.0              -25.792418         0.142621
+mattersim-v1-5m     wbm-1-3      Ac1 U3        4    -34.904728        -8.726182                           0.0              -34.904728         0.772668
+mattersim-v1-5m     wbm-1-4 Ag2 Au1 Hg1        4     -9.124458        -2.281115                           0.0               -9.124458         0.029585
+mattersim-v1-5m     wbm-1-5 Ag2 Ba1 La1        4    -13.242075        -3.310519                           0.0              -13.242075        -0.180469

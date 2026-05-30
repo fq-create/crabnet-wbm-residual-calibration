@@ -1,0 +1,10 @@
+# MACE frozen-baseline prediction environment
+# Tested with Python 3.11.
+mace-torch==0.3.16
+torch==2.5.1
+numpy==1.26.3
+pandas==2.2.3
+pymatgen==2025.2.18
+ase==3.25.0
+monty==2025.3.3
+tqdm==4.67.1

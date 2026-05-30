@@ -1,0 +1,7 @@
+Wrote 256963 rows to outputs/mace-mpa-0/eform/mace-mpa-0_wbm_computed_full.csv
+baseline_model material_id     formula  n_atoms  energy_total  energy_per_atom  e_correction_per_atom_mp2020  energy_total_for_eform  e_form_per_atom
+    mace-mpa-0     wbm-1-1      Ac6 U2        8    -42.897247        -5.362156                           0.0              -42.897247         0.551594
+    mace-mpa-0     wbm-1-2     Ac1 Th3        4    -25.859035        -6.464759                           0.0              -25.859035         0.125966
+    mace-mpa-0     wbm-1-3      Ac1 U3        4    -34.697121        -8.674280                           0.0              -34.697121         0.824570
+    mace-mpa-0     wbm-1-4 Ag2 Au1 Hg1        4     -9.139198        -2.284800                           0.0               -9.139198         0.025900
+    mace-mpa-0     wbm-1-5 Ag2 Ba1 La1        4    -13.216817        -3.304204                           0.0              -13.216817        -0.174154

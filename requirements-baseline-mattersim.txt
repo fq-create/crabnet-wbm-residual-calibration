@@ -1,0 +1,10 @@
+# MatterSim frozen-baseline prediction environment
+# Tested with Python 3.9.
+mattersim==1.1.2
+torch==2.6.0
+numpy==1.26.4
+pandas==2.3.3
+pymatgen==2024.4.13
+ase==3.26.0
+monty==2025.3.3
+tqdm==4.67.3
