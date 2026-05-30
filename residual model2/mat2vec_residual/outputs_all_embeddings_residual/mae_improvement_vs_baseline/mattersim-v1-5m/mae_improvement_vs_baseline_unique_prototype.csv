@@ -1,15 +1,3 @@
-baseline_model,representation,subset,MAE_mean,baseline_representation,baseline_MAE_mean,relative_improvement_vs_baseline_%
-mattersim-v1-5m,mat2vec+S64,unique_prototype,0.0163432007839465,mattersim-v1-5m-baseline,0.0164318017922703,0.5392044612263976
-mattersim-v1-5m,MDS_F_64_cos_zscore,unique_prototype,0.0163442619794832,mattersim-v1-5m-baseline,0.0164318017922703,0.5327462800109893
-mattersim-v1-5m,mat2vec+H64,unique_prototype,0.0163470306972061,mattersim-v1-5m-baseline,0.0164318017922703,0.5158965287913688
-mattersim-v1-5m,mat2vec+S32,unique_prototype,0.0163494577214357,mattersim-v1-5m-baseline,0.0164318017922703,0.5011262421223686
-mattersim-v1-5m,mat2vec+H32,unique_prototype,0.0163505358578923,mattersim-v1-5m-baseline,0.0164318017922703,0.49456496253641197
-mattersim-v1-5m,mat2vec+L32,unique_prototype,0.0163529593707965,mattersim-v1-5m-baseline,0.0164318017922703,0.479816044950638
-mattersim-v1-5m,mat2vec+L64,unique_prototype,0.0163546304968221,mattersim-v1-5m-baseline,0.0164318017922703,0.4696459732401575
-mattersim-v1-5m,mat2vec,unique_prototype,0.0163583883976458,mattersim-v1-5m-baseline,0.0164318017922703,0.44677629119793516
-mattersim-v1-5m,MDS_64_cos_zscore,unique_prototype,0.0163630863913881,mattersim-v1-5m-baseline,0.0164318017922703,0.41818542939413916
-mattersim-v1-5m,MDS_32_cos_zscore,unique_prototype,0.0163681289734144,mattersim-v1-5m-baseline,0.0164318017922703,0.3874974860386453
-mattersim-v1-5m,MDS_E_64_cos_zscore,unique_prototype,0.0163708465086676,mattersim-v1-5m-baseline,0.0164318017922703,0.37095921903936185
-mattersim-v1-5m,MDS_F_32_cos_zscore,unique_prototype,0.0163730747098781,mattersim-v1-5m-baseline,0.0164318017922703,0.35739892152197233
-mattersim-v1-5m,MDS_E_32_cos_zscore,unique_prototype,0.0163950573148976,mattersim-v1-5m-baseline,0.0164318017922703,0.22361806597488992
-mattersim-v1-5m,mattersim-v1-5m-baseline,unique_prototype,0.0164318017922703,mattersim-v1-5m-baseline,0.0164318017922703,0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:2aaa10d69cf04c741a98423266c4f6a514bc5716bdd04b0b4fbbc69b21e4141f
+size 1944

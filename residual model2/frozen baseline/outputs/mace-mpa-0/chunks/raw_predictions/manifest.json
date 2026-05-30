@@ -1,21 +1,3 @@
-{
-  "baseline_model": "mace-mpa-0",
-  "summary": "/home/ubuntu/fq/Latent-space-fusion-and-distillation/residual model/data/wbm_summary.csv.gz",
-  "structures": "/home/ubuntu/fq/Latent-space-fusion-and-distillation/residual model/data/2022-10-19-wbm-computed-structure-entries.json",
-  "structure_source": "computed_structure_entry.structure",
-  "structure_tag": "computed",
-  "output_root": "/home/ubuntu/fq/Latent-space-fusion-and-distillation/residual model/frozen baseline/outputs",
-  "output": "/home/ubuntu/fq/Latent-space-fusion-and-distillation/residual model/frozen baseline/outputs/mace-mpa-0/raw_predictions/mace-mpa-0_wbm_computed_full_raw.csv",
-  "chunk_dir": "/home/ubuntu/fq/Latent-space-fusion-and-distillation/residual model/frozen baseline/outputs/mace-mpa-0/chunks/raw_predictions",
-  "model_name": "medium-mpa-0",
-  "device": "cuda",
-  "chunk_size": 2000,
-  "chunk_offset": 0,
-  "chunk_stride": 1,
-  "skip_assemble": false,
-  "requested_rows": 256963,
-  "assigned_rows": 256963,
-  "predicted_rows_this_run": 256963,
-  "skipped_chunks": 0,
-  "n_chunks": 129
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:16185a7aed3476887f0d728c3f5640582c5db9ac81f4c3b779f9a1e9a6c08af3
+size 1077

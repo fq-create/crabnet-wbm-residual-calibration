@@ -1,15 +1,3 @@
-baseline_model,representation,subset,MAE_mean,baseline_representation,baseline_MAE_mean,relative_improvement_vs_baseline_%
-mace-mpa-0,mat2vec+S64,unique_prototype,0.0200504595181517,mace-mpa-0-baseline,0.0200633664286489,0.06433073204889445
-mace-mpa-0,mat2vec+H64,unique_prototype,0.0200509730856785,mace-mpa-0-baseline,0.0200633664286489,0.0617710044546901
-mace-mpa-0,mat2vec+L64,unique_prototype,0.0200516674137554,mace-mpa-0-baseline,0.0200633664286489,0.05831032860365243
-mace-mpa-0,mat2vec+L32,unique_prototype,0.0200520074519486,mace-mpa-0-baseline,0.0200633664286489,0.05661550737607166
-mace-mpa-0,mat2vec+S32,unique_prototype,0.0200524950855153,mace-mpa-0-baseline,0.0200633664286489,0.0541850400443122
-mace-mpa-0,mat2vec+H32,unique_prototype,0.0200526897714877,mace-mpa-0-baseline,0.0200633664286489,0.05321468458033127
-mace-mpa-0,mat2vec,unique_prototype,0.02005417064733,mace-mpa-0-baseline,0.0200633664286489,0.045833690729842454
-mace-mpa-0,MDS_F_64_cos_zscore,unique_prototype,0.0200610849606655,mace-mpa-0-baseline,0.0200633664286489,0.011371311945656765
-mace-mpa-0,MDS_64_cos_zscore,unique_prototype,0.0200621490552842,mace-mpa-0-baseline,0.0200633664286489,0.006067642581472407
-mace-mpa-0,mace-mpa-0-baseline,unique_prototype,0.0200633664286489,mace-mpa-0-baseline,0.0200633664286489,0.0
-mace-mpa-0,MDS_F_32_cos_zscore,unique_prototype,0.0200634811666807,mace-mpa-0-baseline,0.0200633664286489,-0.0005718782648433209
-mace-mpa-0,MDS_E_64_cos_zscore,unique_prototype,0.0200634925020659,mace-mpa-0-baseline,0.0200633664286489,-0.000628376187264469
-mace-mpa-0,MDS_32_cos_zscore,unique_prototype,0.0200649967886387,mace-mpa-0-baseline,0.0200633664286489,-0.008126053997961305
-mace-mpa-0,MDS_E_32_cos_zscore,unique_prototype,0.0200653963820346,mace-mpa-0-baseline,0.0200633664286489,-0.010117710768628779
+version https://git-lfs.github.com/spec/v1
+oid sha256:c2735c82665df9b0c312d7c2f6802506e75cb62ee69b764963b2aa39f2251528
+size 1815

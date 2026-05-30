@@ -1,29 +1,3 @@
-baseline_model,representation,subset,MAE_mean,baseline_representation,baseline_MAE_mean,relative_improvement_vs_baseline_%
-sevennet-l3i5,mat2vec+S64,all,0.034212890512636,sevennet-l3i5-baseline,0.0356617861030045,4.062880042473345
-sevennet-l3i5,mat2vec+H32,all,0.0342275796674037,sevennet-l3i5-baseline,0.0356617861030045,4.021689860003863
-sevennet-l3i5,mat2vec+S32,all,0.0342490123361716,sevennet-l3i5-baseline,0.0356617861030045,3.9615900413745004
-sevennet-l3i5,mat2vec+L32,all,0.0342555432641491,sevennet-l3i5-baseline,0.0356617861030045,3.9432765223638864
-sevennet-l3i5,mat2vec+L64,all,0.0342636941837333,sevennet-l3i5-baseline,0.0356617861030045,3.920420349202352
-sevennet-l3i5,mat2vec+H64,all,0.0342690090918205,sevennet-l3i5-baseline,0.0356617861030045,3.905516698353652
-sevennet-l3i5,mat2vec,all,0.0343090681875293,sevennet-l3i5-baseline,0.0356617861030045,3.793186105620303
-sevennet-l3i5,MDS_E_64_cos_zscore,all,0.0349664953589257,sevennet-l3i5-baseline,0.0356617861030045,1.9496800919352204
-sevennet-l3i5,MDS_64_cos_zscore,all,0.0350342534562486,sevennet-l3i5-baseline,0.0356617861030045,1.7596781185982981
-sevennet-l3i5,MDS_F_64_cos_zscore,all,0.0351462091575082,sevennet-l3i5-baseline,0.0356617861030045,1.445740670439571
-sevennet-l3i5,MDS_32_cos_zscore,all,0.0353433803906732,sevennet-l3i5-baseline,0.0356617861030045,0.8928484720636951
-sevennet-l3i5,MDS_F_32_cos_zscore,all,0.0353538794384009,sevennet-l3i5-baseline,0.0356617861030045,0.863407861048395
-sevennet-l3i5,MDS_E_32_cos_zscore,all,0.0354345623586721,sevennet-l3i5-baseline,0.0356617861030045,0.6371631069629917
-sevennet-l3i5,sevennet-l3i5-baseline,all,0.0356617861030045,sevennet-l3i5-baseline,0.0356617861030045,0.0
-sevennet-l3i5,mat2vec+S64,unique_prototype,0.0355720546037204,sevennet-l3i5-baseline,0.037286936895232,4.599150357483207
-sevennet-l3i5,mat2vec+H32,unique_prototype,0.0355974790826812,sevennet-l3i5-baseline,0.037286936895232,4.530964335573618
-sevennet-l3i5,mat2vec+L32,unique_prototype,0.0356151206560427,sevennet-l3i5-baseline,0.037286936895232,4.48365132241013
-sevennet-l3i5,mat2vec+S32,unique_prototype,0.0356205012969569,sevennet-l3i5-baseline,0.037286936895232,4.469220957885091
-sevennet-l3i5,mat2vec+L64,unique_prototype,0.0356276518231096,sevennet-l3i5-baseline,0.037286936895232,4.450043930357229
-sevennet-l3i5,mat2vec+H64,unique_prototype,0.0356421781195968,sevennet-l3i5-baseline,0.037286936895232,4.4110857919399615
-sevennet-l3i5,mat2vec,unique_prototype,0.0356855237305145,sevennet-l3i5-baseline,0.037286936895232,4.294837007440741
-sevennet-l3i5,MDS_E_64_cos_zscore,unique_prototype,0.0364174641864343,sevennet-l3i5-baseline,0.037286936895232,2.3318426805632284
-sevennet-l3i5,MDS_64_cos_zscore,unique_prototype,0.036512537650965,sevennet-l3i5-baseline,0.037286936895232,2.0768647380257788
-sevennet-l3i5,MDS_F_64_cos_zscore,unique_prototype,0.0366444908963305,sevennet-l3i5-baseline,0.037286936895232,1.7229787491169681
-sevennet-l3i5,MDS_F_32_cos_zscore,unique_prototype,0.0368686743693349,sevennet-l3i5-baseline,0.037286936895232,1.1217401071917599
-sevennet-l3i5,MDS_32_cos_zscore,unique_prototype,0.0368747094203777,sevennet-l3i5-baseline,0.037286936895232,1.105554677265562
-sevennet-l3i5,MDS_E_32_cos_zscore,unique_prototype,0.0369921659610917,sevennet-l3i5-baseline,0.037286936895232,0.7905474642997368
-sevennet-l3i5,sevennet-l3i5-baseline,unique_prototype,0.037286936895232,sevennet-l3i5-baseline,0.037286936895232,0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5af6ba84c9fce74f5fe83ab384f16ec57fe8788387fb42a697b4a1d1337672a
+size 3425

@@ -1,2 +1,7 @@
+*.json filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
 *.csv.gz filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.ckpt filter=lfs diff=lfs merge=lfs -text
 residual[[:space:]]model2/data/*.json filter=lfs diff=lfs merge=lfs -text
