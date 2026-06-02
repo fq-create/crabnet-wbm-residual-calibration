@@ -135,7 +135,6 @@ def parse_args() -> argparse.Namespace:
         default="e_above_hull_mp2020_corrected_ppd_mp",
     )
     parser.add_argument("--group-col", default="wyckoff_spglib_initial_structure")
-    parser.add_argument("--unique-col", default="unique_prototype")
     parser.add_argument("--n-splits", type=int, default=5)
     parser.add_argument("--random-state", type=int, default=42)
     parser.add_argument("--expected-total", type=int, default=256_963)
@@ -215,25 +214,6 @@ def parse_formula_sequences(formulas: pd.Series) -> list[FormulaSequence]:
         parsed.append(FormulaSequence(src=src, frac=frac.astype(np.float32), elements=elements))
     return parsed
 
-
-def to_bool_series(series: pd.Series) -> pd.Series:
-    if series.dtype == bool:
-        return series
-    mapping = {
-        "true": True,
-        "false": False,
-        "1": True,
-        "0": False,
-        "yes": True,
-        "no": False,
-    }
-    lowered = series.astype(str).str.lower().map(mapping)
-    if lowered.isna().any():
-        raise ValueError(
-            "Could not coerce unique_prototype column to bool. "
-            f"Unexpected values: {series[lowered.isna()].head(10).tolist()}"
-        )
-    return lowered.astype(bool)
 
 
 def regression_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> dict[str, float]:
@@ -479,7 +459,6 @@ def baseline_prediction_rows(
                     "frontend": FRONTEND_NAME,
                     "prototype_group": df_row.prototype_group,
                     "wyckoff_spglib_initial_structure": df_row.wyckoff_spglib_initial_structure,
-                    "unique_prototype": bool(df_row.unique_prototype),
                     "e_form_true": float(df_row.label),
                     "e_form_base": float(df_row.E_base),
                     "e_form_pred": float(df_row.E_base),
@@ -509,7 +488,6 @@ def main() -> None:
         args.label_col,
         args.each_col,
         args.group_col,
-        args.unique_col,
     ]
     summary = pd.read_csv(args.summary, usecols=summary_cols)
     summary["material_id"] = summary["material_id"].astype(str)
@@ -552,7 +530,6 @@ def main() -> None:
             args.label_col: "label",
             args.each_col: "e_above_hull_true",
             args.group_col: "wyckoff_spglib_initial_structure",
-            args.unique_col: "unique_prototype",
         }
     )
     eform_col = detect_eform_column(merged, baseline_model)
@@ -561,8 +538,6 @@ def main() -> None:
     merged["e_above_hull_true"] = merged["e_above_hull_true"].astype(float)
     merged["E_base"] = merged[eform_col].astype(float)
     merged["residual"] = merged["label"] - merged["E_base"]
-    merged["unique_prototype"] = to_bool_series(merged["unique_prototype"])
-
     canonicalized = merged["wyckoff_spglib_initial_structure"].map(canonicalize_prototype)
     merged["prototype_group"] = canonicalized.map(lambda pair: pair[0])
     fallback_count = int(canonicalized.map(lambda pair: pair[1]).sum())
@@ -587,7 +562,6 @@ def main() -> None:
             "formula",
             "prototype_group",
             "wyckoff_spglib_initial_structure",
-            "unique_prototype",
             "fold",
         ]
     ].copy()
@@ -616,8 +590,6 @@ def main() -> None:
     e_base = merged["E_base"].to_numpy(dtype=float)
     residual = merged["residual"].to_numpy(dtype=float)
     each_true = merged["e_above_hull_true"].to_numpy(dtype=float)
-    unique_mask = merged["unique_prototype"].to_numpy(dtype=bool)
-
     metrics_rows: list[dict[str, Any]] = []
     prediction_rows = baseline_prediction_rows(
         merged,
@@ -632,7 +604,7 @@ def main() -> None:
         train_mask = fold_assignments != fold
         test_mask = fold_assignments == fold
         for split_name, split_mask in (("train", train_mask), ("test", test_mask)):
-            for subset_name, subset_mask in (("all", np.ones(len(merged), dtype=bool)), ("unique_prototype", unique_mask)):
+            for subset_name, subset_mask in (("all", np.ones(len(merged), dtype=bool)),):
                 row_mask = split_mask & subset_mask
                 metrics_rows.append(
                     evaluate_split_subset(
@@ -743,7 +715,6 @@ def main() -> None:
         usable_e_base = e_base[usable_idx]
         usable_residual = residual[usable_idx]
         usable_each_true = each_true[usable_idx]
-        usable_unique = unique_mask[usable_idx]
         usable_df = merged.iloc[usable_idx].reset_index(drop=True)
 
         print(
@@ -809,7 +780,7 @@ def main() -> None:
             for split_name, local_idx in (("train", train_local), ("test", test_local)):
                 usable_row_mask = np.zeros(n_usable, dtype=bool)
                 usable_row_mask[local_idx] = True
-                for subset_name, subset_local_mask in (("all", np.ones(n_usable, dtype=bool)), ("unique_prototype", usable_unique)):
+                for subset_name, subset_local_mask in (("all", np.ones(n_usable, dtype=bool)),):
                     local_mask = usable_row_mask & subset_local_mask
                     metrics_rows.append(
                         evaluate_split_subset(
@@ -852,7 +823,6 @@ def main() -> None:
                         "frontend": FRONTEND_NAME,
                         "prototype_group": df_row.prototype_group,
                         "wyckoff_spglib_initial_structure": df_row.wyckoff_spglib_initial_structure,
-                        "unique_prototype": bool(df_row.unique_prototype),
                         "e_form_true": float(df_row.label),
                         "e_form_base": float(df_row.E_base),
                         "e_form_pred": float(pred_e),

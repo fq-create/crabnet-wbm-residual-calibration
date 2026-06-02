@@ -74,6 +74,12 @@ def collect_csvs(model_dirs: list[Path], relative_name: str) -> pd.DataFrame | N
     return pd.concat(frames, ignore_index=True)
 
 
+def keep_all_subset(df: pd.DataFrame) -> pd.DataFrame:
+    if "subset" in df.columns:
+        return df[df["subset"].astype(str) == "all"].copy()
+    return df
+
+
 def maybe_sort(df: pd.DataFrame) -> pd.DataFrame:
     sort_columns = [
         column
@@ -113,6 +119,7 @@ def write_combined_tables(output_dir: Path, model_dirs: list[Path]) -> None:
         combined_df = collect_csvs(model_dirs, filename)
         if combined_df is None:
             continue
+        combined_df = keep_all_subset(combined_df)
         combined_df = maybe_sort(combined_df)
         combined_path = output_dir / filename.replace(".csv", "_combined.csv")
         combined_df.to_csv(combined_path, index=False)

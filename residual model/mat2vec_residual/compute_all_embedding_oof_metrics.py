@@ -97,8 +97,6 @@ def route_from_path(path: Path) -> tuple[str, str, str]:
 def subset_frame(frame: pd.DataFrame, subset: str) -> pd.DataFrame:
     if subset == "all":
         return frame
-    if subset == "unique_prototype":
-        return frame[frame["unique_prototype"].astype(bool)]
     raise KeyError(f"Unknown subset {subset!r}")
 
 
@@ -134,7 +132,6 @@ def compute_oof_metrics_for_file(
         "split",
         "fold",
         "representation",
-        "unique_prototype",
         "e_form_true",
         "e_form_base",
         "e_form_pred",
@@ -167,7 +164,7 @@ def compute_oof_metrics_for_file(
         if representation.lower() == baseline_candidate.lower()
     ]
     baseline_representation = baseline_matches[0] if baseline_matches else baseline_candidate
-    subsets = ["all", "unique_prototype"]
+    subsets = ["all"]
 
     metric_rows: list[dict[str, Any]] = []
     validation_rows: list[dict[str, Any]] = []
